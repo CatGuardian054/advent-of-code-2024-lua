@@ -1,5 +1,10 @@
 local utils = {}
 
+local function split_whitespace(line)
+    return string.gmatch(line, "([^%s]+)")
+end
+
+
 local function parse_line(line)
     local left_number, right_number = line:match("(%d+)%s+(%d+)")
     return tonumber(left_number), tonumber(right_number)
