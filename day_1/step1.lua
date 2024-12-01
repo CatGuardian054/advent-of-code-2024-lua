@@ -4,7 +4,7 @@ function parse_line(line)
 end
 
 -- MAIN
-local file = io.open('1.txt')
+local file = io.open('input.txt')
 
 local leftArray = {};
 local rightArray = {};
